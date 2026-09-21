@@ -1,0 +1,43 @@
+{
+  "pack": {
+    "pack_format": 42,
+    "min_format": 15,
+    "max_format": 9999,
+    "supported_formats": {
+      "min_inclusive": 15,
+      "max_inclusive": 9999
+    },
+    "description": "§6No Background Dark§r\n§7Removes GUI blur & dark backgrounds\n§8By nuel"
+  },
+  "overlays": {
+    "entries": [
+      {
+        "formats": {
+          "min_inclusive": 15,
+          "max_inclusive": 55
+        },
+        "directory": "1.21.6-1.21.10",
+        "min_format": 15,
+        "max_format": 55
+      },
+      {
+        "formats": {
+          "min_inclusive": 56,
+          "max_inclusive": 69
+        },
+        "directory": "1.21.6-1.21.10",
+        "min_format": 56,
+        "max_format": 69
+      },
+      {
+        "formats": {
+          "min_inclusive": 70,
+          "max_inclusive": 9999
+        },
+        "directory": "1.21.11",
+        "min_format": 70,
+        "max_format": 9999
+      }
+    ]
+  }
+}
