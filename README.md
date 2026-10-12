@@ -1,49 +1,67 @@
-# No Background Dark
+<p align="center">
+  <img src="pack.png" alt="No Background Dark logo" width="128">
+</p>
 
-> Clean Minecraft GUI without blur and dark overlays
+<h1 align="center">No Background Dark</h1>
 
-A lightweight shader-based resource pack that removes GUI background blur and dark tinting for a cleaner, more transparent interface experience.
+<p align="center">
+  Resource pack Minecraft untuk menghapus blur dan lapisan gelap pada GUI.
+</p>
 
-## What It Does
+<p align="center">
+  <a href="https://github.com/fadhlanel/no-background-dark/releases"><img src="https://img.shields.io/github/v/release/fadhlanel/no-background-dark?display_name=tag&label=release&color=orange" alt="Rilis terbaru"></a>
+  <a href="https://github.com/fadhlanel/no-background-dark/releases"><img src="https://img.shields.io/github/downloads/fadhlanel/no-background-dark/total?label=downloads&color=brightgreen" alt="Total unduhan"></a>
+  <a href="LICENSE"><img src="https://img.shields.io/badge/license-Free%20to%20use-blue" alt="Lisensi"></a>
+</p>
 
-### Removed
-- ❌ GUI background blur
-- ❌ Dark overlay tint on menus
-- ❌ Vignette effect
+---
 
-### Result
-- ✨ Crystal-clear GUI backgrounds
-- 🎯 Better visibility of your world while in menus
-- 🪶 Zero performance impact
+## Tentang
 
-## Installation
+**No Background Dark** membuat antarmuka Minecraft lebih bersih tanpa menghalangi pandangan dunia. Resource pack ini menghapus blur, tint gelap menu, dan vignette sambil menjaga GUI tetap transparan.
 
-1. Download the latest release
-2. Place `.zip` file in `.minecraft/resourcepacks/`
-3. In Minecraft: **Options** → **Resource Packs** → Select **No Background Dark**
-4. Click **Done**
+| Dihapus | Hasil |
+| --- | --- |
+| Blur latar GUI | Dunia tetap terlihat saat membuka menu |
+| Lapisan gelap pada menu | Tampilan lebih terang dan bersih |
+| Efek vignette | Sudut layar tidak lagi digelapkan |
 
-## Compatibility
+- Client-side. Tidak perlu dipasang di server.
+- Tanpa dampak performa tambahan.
+- Mendukung elemen GUI transparan.
 
-| Minecraft Version | Status |
-|-------------------|--------|
-| 1.21.11+          | ✅ Full support |
-| 1.21.6 - 1.21.10  | ✅ Full support |
-| 1.20.5+           | ✅ Compatible (format 15+) |
+## Instalasi
 
-Works with **Sodium**, **Iris**, and most optimization mods.
+1. Unduh file `.zip` dari [rilis terbaru](https://github.com/fadhlanel/no-background-dark/releases/latest).
+2. Pindahkan file ke folder `.minecraft/resourcepacks/`.
+3. Buka **Options** → **Resource Packs** di Minecraft.
+4. Aktifkan **No Background Dark**, lalu klik **Done**.
 
-## Technical Details
+> Jangan ekstrak file `.zip` hasil unduhan.
+
+## Kompatibilitas
+
+| Minecraft | Status | Resource pack format |
+| --- | --- | --- |
+| 1.21.11+ | ✅ Didukung | 70+ |
+| 1.21.6–1.21.10 | ✅ Didukung | 56–69 |
+| 1.20.5+ | ✅ Kompatibel | 15+ |
+
+Bekerja dengan **Sodium**, **Iris**, dan sebagian besar mod optimasi.
+
+## Cara Kerja
 
 <details>
-<summary>How it works</summary>
+<summary>Lihat detail teknis</summary>
 
-Modifies core GUI shaders to:
-- Set alpha channel to `0.0` for dark backgrounds (RGB ≤ 0.1, Alpha ≥ 0.5)
-- Replace blur post-processing with direct blit passes
-- Use transparent vignette texture
+Resource pack memodifikasi shader GUI Minecraft untuk:
 
-Files modified:
+- Mengatur alpha menjadi `0.0` pada latar gelap.
+- Mengganti post-processing blur dengan blit langsung.
+- Menggunakan tekstur vignette transparan.
+
+File utama yang diubah:
+
 - `assets/minecraft/shaders/core/gui.vsh`
 - `assets/minecraft/shaders/core/rendertype_gui_overlay.vsh`
 - `assets/minecraft/shaders/post/transparency.json`
@@ -51,29 +69,29 @@ Files modified:
 
 </details>
 
-## Building from Source
+## Build dari Source
 
 ```bash
-# Clone
-git clone https://github.com/yourusername/NoBackgroundDark.git
-
-# Create .zip (keep folder structure intact)
-# On Windows: Right-click folder → Send to → Compressed folder
-# On Linux/Mac:
-cd NoBackgroundDark
+git clone https://github.com/fadhlanel/no-background-dark.git
+cd no-background-dark
 zip -r NoBackgroundDark.zip assets/ 1.21.11/ 1.21.6-1.21.10/ pack.mcmeta pack.png
 ```
 
-## License
+## Rilis
 
-Free to use and modify. Credit appreciated but not required.
+GitHub Release dibuat otomatis saat push tag berformat `v*`.
 
-## Author
+```bash
+git tag v1.0.0
+git push origin v1.0.0
+```
 
-**nuel** - Clean UI enthusiast
+Release akan berisi `NoBackgroundDark-v1.0.0.zip` dan catatan rilis otomatis dari GitHub.
 
----
+## Lisensi
+
+Bebas digunakan dan dimodifikasi. Kredit diapresiasi, tidak wajib.
 
 <p align="center">
-  <sub>Made for players who prefer clean interfaces over decorative overlays</sub>
+  Dibuat oleh <strong>nuel</strong> untuk pemain yang menyukai GUI bersih.
 </p>
