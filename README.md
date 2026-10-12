@@ -13,12 +13,6 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/fadhlanel/no-background-dark/releases/latest"><strong>Download latest release</strong></a>
-  &nbsp;·&nbsp;
-  <a href="https://github.com/fadhlanel/no-background-dark/releases"><strong>View all releases</strong></a>
-</p>
-
-<p align="center">
   <a href="https://github.com/fadhlanel/no-background-dark/releases/latest"><img src="https://img.shields.io/github/v/release/fadhlanel/no-background-dark?label=Latest%20release&style=for-the-badge&color=orange" alt="Latest release"></a>
   <a href="https://github.com/fadhlanel/no-background-dark/actions/workflows/release.yml"><img src="https://img.shields.io/github/actions/workflow/status/fadhlanel/no-background-dark/release.yml?label=Build&style=for-the-badge" alt="Build status"></a>
 </p>
