@@ -10,8 +10,7 @@
 
 <p align="center">
   <a href="https://github.com/fadhlanel/no-background-dark/releases"><img src="https://img.shields.io/github/v/release/fadhlanel/no-background-dark?display_name=tag&label=release&color=orange" alt="Rilis terbaru"></a>
-  <a href="https://github.com/fadhlanel/no-background-dark/releases"><img src="https://img.shields.io/github/downloads/fadhlanel/no-background-dark/total?label=downloads&color=brightgreen" alt="Total unduhan"></a>
-  <a href="LICENSE"><img src="https://img.shields.io/badge/license-Free%20to%20use-blue" alt="Lisensi"></a>
+  <a href="https://github.com/fadhlanel/no-background-dark/releases"><img src="https://img.shields.io/github/downloads/fadhlanel/no-background-dark/latest/total?label=downloads&color=brightgreen" alt="Unduhan rilis terbaru"></a>
 </p>
 
 ---
